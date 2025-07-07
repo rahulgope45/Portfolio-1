@@ -1,8 +1,15 @@
 import React from 'react'
+import Home from './Home'
+import Projects from './Projects'
+
 
 function Main() {
   return (
-    <div>Main</div>
+    <div  className="pt-28 space-y-20">
+      <Home/>
+      <Projects/>
+
+    </div>
   )
 }
 

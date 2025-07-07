@@ -2,8 +2,11 @@ import React from 'react'
 
 function Projects() {
   return (
-    <div className="hover:bg-[#f7f7f7] hover:text-blue-500 cursor-pointer px-3 py-1 rounded transition">
-        Projects</div>
+    <div className="min-h-screen">
+      <h1 className="text-white text-4xl">
+        Projects fff
+        </h1>
+    </div>
   )
 }
 
