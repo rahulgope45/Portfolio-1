@@ -5,6 +5,7 @@ import './App.css'
 import Particles from "react-particles";
 import { tsParticles } from "tsparticles-engine";
 import { loadBasic } from "tsparticles-basic";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
 
