@@ -110,7 +110,7 @@ useEffect(() =>{
             <div>
              <h1 className="text-xl font-bold mb-4">About Me</h1>
              <p className="text-white leading-relaxed">
-             From a young age, I've been drawn to problem-solving. This interest led me to explore graphic design  especially animation and poster creation.
+             From a young age, I've been drawn to problem solving. This interest led me to explore graphic design  especially animation and poster creation.
              <br /><br />
             When I discovered programming, I found a new passion and began honing my skills to build websites and mobile apps.
             <br /><br />
