@@ -1,14 +1,11 @@
-import React,{useEffect,useRef,useState} from 'react'
-import SplitType from "split-type"; 
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import React,{useState} from 'react'
+
 import img3 from '/Bgimg/img3.jpg'
 
 
 
 
 
-gsap.registerPlugin(ScrollTrigger);
 
 
 const allTheImg =[
@@ -18,28 +15,6 @@ const allTheImg =[
 function Home() {
 
 
-const textRef =useRef(null)
-
-useEffect(() =>{
-  //split the text in character
-  const split = new SplitType(textRef.current ,{types: 'chars'})
-
-  gsap.from(split.chars,{
-        opacity: 0,
-      y: 50,
-      stagger: 0.05,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: textRef.current,
-        start: "top 80%",
-      }
-})
-
-// Clean up (optional)
-    return () => {
-      split.revert();
-    };
-  }, []);
 
   const [curImg,setScrollImg] =useState(0)
 

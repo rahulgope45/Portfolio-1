@@ -17,9 +17,11 @@ function Header() {
         <div className="hover:text-blue-400 hover:scale-105 transition duration-200 ease-in-out cursor-pointer">
         Projects</div>
         <div  className="hover:text-blue-400 hover:scale-105 transition duration-200 ease-in-out cursor-pointer">
-        Resume</div>
-         <div className="hover:text-blue-400 hover:scale-105 transition duration-200 ease-in-out cursor-pointer">
         Skills</div>
+         <div className="hover:text-blue-400 hover:scale-105 transition duration-200 ease-in-out cursor-pointer">
+        Resume</div>
+        <div className="hover:text-blue-400 hover:scale-105 transition duration-200 ease-in-out cursor-pointer">
+        Contact</div>
     </div>
   )
 }
