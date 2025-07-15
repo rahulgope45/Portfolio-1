@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { motion } from "framer-motion";
 
 export const Contact = () => {
   const form = useRef();
@@ -23,8 +24,12 @@ export const Contact = () => {
   };
 
 return (
-    <section className="min-h-screen flex items-center justify-center p-4"
+    <motion.section className="min-h-screen flex items-center justify-center p-4"
     id="Contact"
+    initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: false, amount: 0.5}}
     >
       <div className="w-full max-w-xl bg-white/10 backdrop-blur-lg rounded-2xl shadow-lg p-6">
         <h2 className="text-3xl font-semibold text-white text-center mb-6">Contact Me</h2>
@@ -72,25 +77,30 @@ return (
         </form>
 
         <div className="flex justify-center gap-6 mt-6">
-          <a
+          <motion.a
             href="https://github.com/rahulgope45"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white text-2xl hover:text-blue-400 transition"
+            whileHover={{ y: -5 }}
+            transition={{ type: "spring", stiffness: 100 }}
           >
             <FaGithub />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="https://www.linkedin.com/in/rahul-gope-808476369/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white text-2xl hover:text-blue-400 transition"
+            whileHover={{ y: -5 }}
+            transition={{ type: "spring", stiffness: 100 }}
+
           >
             <FaLinkedin />
-          </a>
+          </motion.a>
         </div>
       
       </div>
-    </section>
+    </motion.section>
   );
 };

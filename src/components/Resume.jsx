@@ -1,7 +1,14 @@
+import { motion } from "framer-motion";
+
+
 function Resume() {
   return (
-    <section className="min-h-screen p-5 flex flex-col items-center justify-center"
+    <motion.section className="min-h-screen p-5 flex flex-col items-center justify-center"
     id="Resume"
+    initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: false, amount: 0.5 }}
     >
       <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">Resume</h1>
       <div className="w-full max-w-4xl bg-white/10 backdrop-blur-md rounded-lg shadow-lg p-4">
@@ -26,7 +33,7 @@ function Resume() {
             </a>
           </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

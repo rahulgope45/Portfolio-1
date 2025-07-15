@@ -3,25 +3,38 @@ import todo from '/Bgimg/todo.png'
 import weather from '/Bgimg/weather.png'
 import currency from '/Bgimg/currency.png'
 import personal from '/Bgimg/personal.png'
+import { motion } from "framer-motion";
+import ScrollFloat from './ScrollFloat'
 
 import { SiReact, SiCss3, SiJavascript ,SiTailwindcss  } from "react-icons/si";
 
 
 function Projects() {
   return (
-    <section className="min-h-screen p-5"
+    
+    <motion.section className="min-h-screen p-5"
     id="Projects"
+    initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: false, amount: 0.5 }}
     >
-      <div className="w-full text-center my-10"
+     
+          <div className="w-full text-center my-10"
       
       >
         <h1 className="text-3xl md:text-4xl font-bold text-white tracking-wide">Projects</h1>
         </div>
+
+    
       <br/>
       <br/>
       <div className='flex justify-center items-center gap-15 p-7 flex-wrap'>
 
-        <div  className="w-full sm:w-[calc(30%-1rem)] max-w-sm min-h-[420px] border border-white/20 rounded-2xl shadow-lg bg-white/10 backdrop-blur-md overflow-hidden transition-transform hover:scale-105 duration-300">
+        <motion.div  className="w-full sm:w-[calc(30%-1rem)] max-w-sm min-h-[420px] border border-white/20 rounded-2xl shadow-lg bg-white/10 backdrop-blur-md overflow-hidden transition-transform hover:scale-105 duration-300"
+        whileHover={{  boxShadow: "0 0 15px rgba(0, 123, 255, 0.6)" }}
+        transition={{ type: "spring", stiffness: 300 }}
+        >
          <div  className="bg-white/10 p-6">
          <img src={todo} alt='To-Do-app'  className="w-full h-40 object-cover rounded-lg shadow-sm"/>
          </div>
@@ -47,11 +60,14 @@ function Projects() {
           <SiCss3 className="text-[#1572B6]" />
           <SiJavascript className="text-[#F7DF1E]" />
         </div>
-        </div>
+        </motion.div>
 
 
         {/* 2nd project */}
-         <div  className="w-full sm:w-[calc(30%-1rem)] max-w-sm border border-white/20 rounded-2xl shadow-lg bg-white/10 backdrop-blur-md overflow-hidden transition-transform hover:scale-105 duration-300">
+         <motion.div  className="w-full sm:w-[calc(30%-1rem)] max-w-sm border border-white/20 rounded-2xl shadow-lg bg-white/10 backdrop-blur-md overflow-hidden transition-transform hover:scale-105 duration-300"
+         whileHover={{  boxShadow: "0 0 15px rgba(0, 123, 255, 0.6)" }}
+         transition={{ type: "spring", stiffness: 300 }}
+         >
          <div  className="bg-white/10 p-6">
          <img src={weather} alt='Weather-app'  className="w-full h-40 object-cover rounded-lg shadow-sm"/>
          </div>
@@ -77,10 +93,13 @@ function Projects() {
           <SiCss3 className="text-[#1572B6]" />
           <SiJavascript className="text-[#F7DF1E]" />
         </div>
-        </div>
+        </motion.div>
 
          {/* 3rd project */}
-         <div  className="w-full sm:w-[calc(30%-1rem)] max-w-sm border border-white/20 rounded-2xl shadow-lg bg-white/10 backdrop-blur-md overflow-hidden transition-transform hover:scale-105 duration-300">
+         <motion.div  className="w-full sm:w-[calc(30%-1rem)] max-w-sm border border-white/20 rounded-2xl shadow-lg bg-white/10 backdrop-blur-md overflow-hidden transition-transform hover:scale-105 duration-300"
+         whileHover={{  boxShadow: "0 0 15px rgba(0, 123, 255, 0.6)" }}
+         transition={{ type: "spring", stiffness: 300 }}
+         >
          <div  className="bg-white/10 p-6">
          <img src={currency} alt='Currency Converter'  className="w-full h-40 object-cover rounded-lg shadow-sm"/>
          </div>
@@ -106,13 +125,16 @@ function Projects() {
           <SiCss3 className="text-[#1572B6]" />
           <SiJavascript className="text-[#F7DF1E]" />
         </div>
-        </div>
+        </motion.div>
 
 
       </div>
       <div className='flex justify-center items-center gap-15 p-7 flex-wrap'>
         {/* 4th project */}
-         <div  className="w-full sm:w-[calc(30%-1rem)] max-w-sm border border-white/20 rounded-2xl shadow-lg bg-white/10 backdrop-blur-md overflow-hidden transition-transform hover:scale-105 duration-300">
+         <motion.div  className="w-full sm:w-[calc(30%-1rem)] max-w-sm border border-white/20 rounded-2xl shadow-lg bg-white/10 backdrop-blur-md overflow-hidden transition-transform hover:scale-105 duration-300"
+         whileHover={{  boxShadow: "0 0 15px rgba(0, 123, 255, 0.6)" }}
+         transition={{ type: "spring", stiffness: 300 }}
+         >
          <div  className="bg-white/10 p-6">
          <img src={personal} alt='portfolio website'  className="w-full h-40 object-cover rounded-lg shadow-sm"/>
          </div>
@@ -138,9 +160,9 @@ function Projects() {
           <SiTailwindcss  className="text-[#1572B6]" />
           <SiJavascript className="text-[#F7DF1E]" />
         </div>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

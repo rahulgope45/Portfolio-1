@@ -1,4 +1,7 @@
 import React,{useState} from 'react'
+import FadeContent from './Fadecontent'
+  
+
 
 import img3 from '/Bgimg/img3.jpg'
 
@@ -41,7 +44,9 @@ function Home() {
 
 
   return (
-    <section
+    <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={60}>
+
+      <section
     id="Home"
      className="h-screen ">
        <div className="flex items-center justify-center">
@@ -116,6 +121,11 @@ function Home() {
       </div>
       
     </section>
+
+      
+
+    </FadeContent>
+    
   )
 }
 

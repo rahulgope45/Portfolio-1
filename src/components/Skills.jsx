@@ -2,6 +2,7 @@ import React,{useRef,useState} from 'react'
 import { SiReact, SiTailwindcss, SiJavascript, SiCss3 ,  SiPython, SiFirebase, SiGit, SiGithub,  SiHtml5  } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import SpotlightCard from './Spotlightcard';
+import { motion } from "framer-motion";
 
 function Skills() {
 
@@ -15,8 +16,13 @@ function Skills() {
 
 
   return (
-  <section className="min-h-screen p-5"
+  <motion.section className="min-h-screen p-5"
   id="Skills"
+   initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: false, amount: 0.5 }}
+  
   >
     <div className="w-full text-center my-10">
         <h1 className="text-3xl md:text-4xl font-bold text-white tracking-wide">Skills</h1>
@@ -150,7 +156,7 @@ function Skills() {
 
     </div>
 
-  </section>
+  </motion.section>
   )
 }
 
