@@ -113,7 +113,12 @@ function Home() {
         className={`bi ${liked ? 'bi-heart-fill text-pink-500' : 'bi-heart'} transition-all duration-300`}
         class="bi bi-heart"></i>
         </div>
-        <div className="cursor-pointer"><i className="bi bi-send-fill"></i></div>
+        <div className="cursor-pointer"
+        onClick={() => {
+        navigator.clipboard.writeText('https://rahul-gope.vercel.app')
+        alert('Link copied to clipboard!');
+        }}
+        ><i className="bi bi-send-fill"></i></div>
       </div>
 
        </div>
