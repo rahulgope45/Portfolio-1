@@ -22,7 +22,9 @@ export const Contact = () => {
   };
 
 return (
-    <div className="min-h-screen flex items-center justify-center p-4">
+    <section className="min-h-screen flex items-center justify-center p-4"
+    id="Contact"
+    >
       <div className="w-full max-w-xl bg-white/10 backdrop-blur-lg rounded-2xl shadow-lg p-6">
         <h2 className="text-3xl font-semibold text-white text-center mb-6">Contact Me</h2>
         <form ref={form} onSubmit={sendEmail} className="space-y-4">
@@ -68,6 +70,6 @@ return (
           </div>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
