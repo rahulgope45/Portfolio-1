@@ -41,7 +41,8 @@ function Home() {
 
 
   return (
-    <div
+    <section
+    id="Home"
      className="h-screen ">
        <div className="flex items-center justify-center">
        <div className="w-[calc(100%-2px)] max-w-6xl border border-white/20 p-2  rounded-xl shadow-md bg-white/50 backdrop-blur-sm flex ">
@@ -92,13 +93,15 @@ function Home() {
             Outside of building, I love researching AI tools and exploring how they can enhance my projects.
             </p>
       </div>
-      <div className="mt-6">
-       <button
-       className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition duration-200"
-       >
-       <i className="bi bi-arrow-down-square-fill"></i>
-        Download Resume
-      </button>
+        <div className="mt-6 flex ">
+        <a
+         href="/resume.pdf"
+         download
+         className="flex items-center gap-2 px-5 py-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 hover:scale-105 transition-all duration-200"
+        >
+        <i className="bi bi-arrow-down-square-fill text-lg"></i>
+        <span className="font-medium">Download Resume</span>
+       </a>
       </div>
       <div className='flex p-5 gap-4 text-xl'>
         <div onClick={toggleLike} className="cursor-pointer"><i 
@@ -112,7 +115,7 @@ function Home() {
        </div>
       </div>
       
-    </div>
+    </section>
   )
 }
 

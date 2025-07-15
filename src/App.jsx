@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import Header from './components/Header'
 import Main from './components/Main'
 import './App.css'
@@ -15,6 +15,35 @@ function App() {
   const particlesInit = async () => {
       await loadBasic(tsParticles);
   }
+
+const [activeSection , setActiveSection] = useState('Home')
+  const [scrollY,setScrollY] = useState(0)
+  const [isVisible,setIsVisible] = useState({})
+
+  useEffect(() =>{
+    const handleScroll =() => setScrollY(window.scrollY)
+    window.addEventListener('scroll' ,handleScroll);
+    return() => window.removeEventListener('scroll',handleScroll)
+  },[]);
+
+  const scrollToSection =(sectionId) =>{
+    const element = document.getElementById(sectionId)
+    if (element){
+      element.scrollIntoView({behavior: 'smooth'})
+      setActiveSection(sectionId)
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
 
   return (
    <div className="relative h-screen w-full bg-gradient-to-br from-[#1e1e2f] via-[#302b63] to-[#24243e] overflow-auto">
@@ -61,7 +90,7 @@ function App() {
     }}
   />
     <div  >
-    <Header/>
+    <Header scrollToSection={scrollToSection}/>
     <Main/>
      
     </div>

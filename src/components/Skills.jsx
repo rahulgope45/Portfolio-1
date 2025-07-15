@@ -15,7 +15,9 @@ function Skills() {
 
 
   return (
-  <div className="min-h-screen p-5">
+  <section className="min-h-screen p-5"
+  id="Skills"
+  >
     <div className="w-full text-center my-10">
         <h1 className="text-3xl md:text-4xl font-bold text-white tracking-wide">Skills</h1>
         </div>
@@ -148,7 +150,7 @@ function Skills() {
 
     </div>
 
-  </div>
+  </section>
   )
 }
 

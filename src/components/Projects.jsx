@@ -9,8 +9,12 @@ import { SiReact, SiCss3, SiJavascript ,SiTailwindcss  } from "react-icons/si";
 
 function Projects() {
   return (
-    <div className="min-h-screen p-5">
-      <div className="w-full text-center my-10">
+    <section className="min-h-screen p-5"
+    id="Projects"
+    >
+      <div className="w-full text-center my-10"
+      
+      >
         <h1 className="text-3xl md:text-4xl font-bold text-white tracking-wide">Projects</h1>
         </div>
       <br/>
@@ -136,7 +140,7 @@ function Projects() {
         </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

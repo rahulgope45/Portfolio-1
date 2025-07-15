@@ -10,4 +10,7 @@ export default defineConfig({
   plugins: 
   [tailwindcss(),
     react()],
+  optimizeDeps: {
+    include: ['pdfjs-dist/build/pdf.worker.entry'],
+  },
 })

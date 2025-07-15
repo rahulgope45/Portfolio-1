@@ -2,6 +2,7 @@ import React from 'react'
 import Home from './Home'
 import Projects from './Projects'
 import Skills from './Skills'
+import Resume from './Resume'
 
 
 function Main() {
@@ -10,6 +11,7 @@ function Main() {
       <Home/>
       <Projects/>
       <Skills/>
+      <Resume/>
 
     </div>
   )
