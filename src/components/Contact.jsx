@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export const Contact = () => {
   const form = useRef();
@@ -69,6 +70,26 @@ return (
             />
           </div>
         </form>
+
+        <div className="flex justify-center gap-6 mt-6">
+          <a
+            href="https://github.com/rahulgope45"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white text-2xl hover:text-blue-400 transition"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/rahul-gope-808476369/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white text-2xl hover:text-blue-400 transition"
+          >
+            <FaLinkedin />
+          </a>
+        </div>
+      
       </div>
     </section>
   );
