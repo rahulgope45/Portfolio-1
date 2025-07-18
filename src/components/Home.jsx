@@ -100,7 +100,7 @@ function Home() {
       </div>
         <div className="mt-6 flex ">
         <a
-         href="/resume2.docx"
+         href="/rahulresume.pdf"
          download
          className="flex items-center gap-2 px-5 py-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 hover:scale-105 transition-all duration-200"
         >
