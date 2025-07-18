@@ -12,14 +12,20 @@ function Resume() {
     >
       <h1 className="text-3xl md:text-4xl font-bold text-white mb-6">Resume</h1>
       <div className="w-full max-w-4xl bg-white/10 backdrop-blur-md rounded-lg shadow-lg p-4">
-          <iframe
-           src ="https://docs.google.com/document/d/1EkTaAqXuaZj-snXyS1DWSi6luFIbzo1HGz0FwG25954/edit?usp=drive_link"
-           style={{ width: '100%', height: '500px' }}
-           frameBorder="0"
-          ></iframe>
+            <object
+          data="/rahulresume.pdf"
+          type="application/pdf"
+          width="100%"
+          height="700px"
+        >
+          <p className="text-white">
+            Your browser does not support viewing PDFs. 
+            <a href="/rahulresume.pdf" className="text-blue-400 underline">Download the PDF</a> instead.
+          </p>
+        </object>
           <div className="flex justify-center mt-4">
             <a
-            href="/resume2.docx"
+            href="/rahulresume.docx"
             download
             className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
             >

@@ -79,7 +79,7 @@ function Projects() {
         </div>
         <div className="mt-4 p-2">
          <a
-         href="https://to-do-app-teal-two.vercel.app/"
+         href="https://github.com/rahulgope45/Weather-App"
          target="_blank"
          rel="noopener noreferrer"
         className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-600 transition duration-200"
@@ -111,7 +111,7 @@ function Projects() {
         </div>
         <div className="mt-4 p-2">
          <a
-         href="https://to-do-app-teal-two.vercel.app/"
+         href="https://rahulgope45.github.io/Currency-converter/"
          target="_blank"
          rel="noopener noreferrer"
         className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-600 transition duration-200"
@@ -146,7 +146,7 @@ function Projects() {
         </div>
         <div className="mt-4 p-2">
          <a
-         href="https://to-do-app-teal-two.vercel.app/"
+         href="https://rahul-gope.vercel.app/"
          target="_blank"
          rel="noopener noreferrer"
         className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-600 transition duration-200"
