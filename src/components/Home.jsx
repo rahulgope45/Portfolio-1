@@ -51,22 +51,7 @@ function Home() {
      className="h-screen ">
        <div className="flex items-center justify-center">
        <div className="w-[calc(100%-2px)] max-w-6xl border border-white/20 p-2  rounded-xl shadow-md bg-white/50 backdrop-blur-sm flex ">
-        <div className="flex-1 bg-white/100 p-6  ">
-        <div className='flex items-center justify-center'>
-          <img src={allTheImg[curImg]} alt='Me' 
-          className="w-full max-h-96 object-contain "/>
-        </div>
-           <div className='flex gap-2 mt-4 items-center justify-center'>
-                    <button onClick={prvImg} disabled={curImg === 0}
-                    className="px-4 py-2 bg-black/30 text-white rounded hover:bg-black/10 disabled:opacity-50">
-                      <i class="bi bi-arrow-left-circle-fill"></i></button>
-                    <button onClick={nextImg} disabled ={curImg === allTheImg.length -1}
-                     className="px-4 py-2 bg-black/30 text-white rounded hover:bg-black/20 disabled:opacity-50">
-                      <i class="bi bi-arrow-right-circle-fill"></i></button>
-                    
-                    
-                </div>
-        </div>
+       
        <div  className="flex-2 border border-white/10 p-2 ">
        <div className=' flex items-center gap-1'>
         <div className="relative p-2 ">
