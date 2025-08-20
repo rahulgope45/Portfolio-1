@@ -1,5 +1,5 @@
 import React,{useRef,useState} from 'react'
-import { SiReact, SiTailwindcss, SiJavascript, SiCss3 ,  SiPython, SiFirebase, SiGit, SiGithub,  SiHtml5  } from "react-icons/si";
+import { SiReact, SiTailwindcss, SiJavascript, SiCss3 ,  SiPython, SiFirebase, SiGit, SiGithub,  SiHtml5 , SiDart, SiFlutter } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import SpotlightCard from './Spotlightcard';
 import { motion } from "framer-motion";
@@ -139,6 +139,28 @@ function Skills() {
       <div className="flex flex-col items-center">
       <SiHtml5 className="text-orange-600 text-4xl mb-2" />
       <p className="text-white font-medium">Html</p>
+    </div>
+
+    </SpotlightCard>
+
+    <SpotlightCard
+     spotlightColor="rgba(187, 0, 255, 0.4)"
+     className="backdrop-blur-md bg-white/10 border border-white/20 rounded-xl p-6 shadow-md hover:scale-105 transition-transform duration-200"
+    >
+      <div className="flex flex-col items-center">
+      <SiDart  className="text-sky-400 text-4xl mb-2" />
+      <p className="text-white font-medium">Dart</p>
+    </div>
+
+    </SpotlightCard>
+
+    <SpotlightCard
+     spotlightColor="rgba(187, 0, 255, 0.4)"
+     className="backdrop-blur-md bg-white/10 border border-white/20 rounded-xl p-6 shadow-md hover:scale-105 transition-transform duration-200"
+    >
+      <div className="flex flex-col items-center">
+      <SiFlutter  className="text-sky-400 text-4xl mb-2" />
+      <p className="text-white font-medium">Flutter</p>
     </div>
 
     </SpotlightCard>
