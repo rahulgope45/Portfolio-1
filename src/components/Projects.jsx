@@ -2,11 +2,15 @@ import React from 'react'
 import todo from '/Bgimg/todo.png'
 import weather from '/Bgimg/weather.png'
 import currency from '/Bgimg/currency.png'
-import personal from '/Bgimg/personal.png'
+import personal from '/Bgimg/personal2.png'
+import chat from '/Bgimg/chatappp.png'
+import Proboat from '/Bgimg/banner1.png'
+import habbit from '/Bgimg/habbit2.png'
+import Groccery from '/Bgimg/Grocery.png'
 import { motion } from "framer-motion";
 import ScrollFloat from './ScrollFloat'
 
-import { SiReact, SiCss3, SiJavascript ,SiTailwindcss  } from "react-icons/si";
+import { SiReact, SiCss3, SiJavascript ,SiTailwindcss, SiExpress, SiMongodb, SiNodedotjs, SiCloudinary, SiSocketdotio, SiDart, SiFlutter  } from "react-icons/si";
 
 
 function Projects() {
@@ -35,18 +39,19 @@ function Projects() {
         whileHover={{  boxShadow: "0 0 15px rgba(0, 123, 255, 0.6)" }}
         transition={{ type: "spring", stiffness: 300 }}
         >
+          {/* Chatify */}
          <div  className="bg-white/10 p-6">
-         <img src={todo} alt='To-Do-app'  className="w-full h-40 object-cover rounded-lg shadow-sm"/>
+         <img src={chat} alt='Chat-app'  className="w-full h-40 object-cover rounded-lg shadow-sm"/>
          </div>
          <div className="p-4 text-white">
-          <h2 className="text-xl font-semibold mb-2">To-Do App</h2>
+          <h2 className="text-xl font-semibold mb-2">Chatify</h2>
           <p className="text-sm text-white/80">
-          A simple and efficient To-Do List built using React JS. It allows users to add Task , delete Tasks, manage daily and Provides a Diary where user can write their daily Journal  with a clean and responsive UI.
+          A Chat Application available in both as a Website and in Native.
           </p>
         </div>
         <div className="mt-4 p-2">
          <a
-         href="https://to-do-app-teal-two.vercel.app/"
+         href="https://github.com/rahulgope45/Chatify"
          target="_blank"
          rel="noopener noreferrer"
         className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-600 transition duration-200"
@@ -57,8 +62,13 @@ function Projects() {
        </div>
        <div className="flex gap-4 text-xl mt-4 text-white p-2">
           <SiReact className="text-[#61DBFB]" />
-          <SiCss3 className="text-[#1572B6]" />
-          <SiJavascript className="text-[#F7DF1E]" />
+          <SiTailwindcss className="text-[#38BDF8]"/>
+          <SiNodedotjs  className="text-[#339933]" />
+          <SiMongodb className="text-[#47A248]"/>
+          <SiExpress className="text-[#F7DF1E]"/>
+          <SiCloudinary  className="text-[#3448C5]" />
+          <SiSocketdotio className="text-[#010101]" /> 
+          
         </div>
         </motion.div>
 
@@ -69,12 +79,13 @@ function Projects() {
          transition={{ type: "spring", stiffness: 300 }}
          >
          <div  className="bg-white/10 p-6">
-         <img src={weather} alt='Weather-app'  className="w-full h-40 object-cover rounded-lg shadow-sm"/>
+         <img src={Proboat} alt='Weather-app'  className="w-full h-40 object-cover rounded-lg shadow-sm"/>
          </div>
          <div className="p-4 text-white">
-          <h2 className="text-xl font-semibold mb-2">Weather App</h2>
+          <h2 className="text-xl font-semibold mb-2">Proboat</h2>
           <p className="text-sm text-white/80">
-          A responsive Weather Application built using React that fetches real-time data from a REST API. It provides users with the current weather, detailed 24-hour forecasts, and extended 21-day weather predictions. The app offers a clean UI and smooth navigation for checking weather conditions across different cities.
+          Proboat is an Fullstack responsive UI Property Rental website.
+          
           </p>
         </div>
         <div className="mt-4 p-2">
@@ -90,8 +101,12 @@ function Projects() {
        </div>
        <div className="flex gap-4 text-xl mt-4 text-white p-2">
           <SiReact className="text-[#61DBFB]" />
-          <SiCss3 className="text-[#1572B6]" />
-          <SiJavascript className="text-[#F7DF1E]" />
+          <SiTailwindcss className="text-[#38BDF8]"/>
+          <SiNodedotjs  className="text-[#339933]" />
+          <SiMongodb className="text-[#47A248]"/>
+          <SiExpress className="text-[#F7DF1E]"/>
+          <SiCloudinary  className="text-[#3448C5]" />
+          
         </div>
         </motion.div>
 
@@ -101,17 +116,17 @@ function Projects() {
          transition={{ type: "spring", stiffness: 300 }}
          >
          <div  className="bg-white/10 p-6">
-         <img src={currency} alt='Currency Converter'  className="w-full h-40 object-cover rounded-lg shadow-sm"/>
+         <img src={habbit} alt='Currency Converter'  className="w-full h-40 object-cover rounded-lg shadow-sm"/>
          </div>
          <div className="p-4 text-white">
-          <h2 className="text-xl font-semibold mb-2">Currency-Converter' App</h2>
+          <h2 className="text-xl font-semibold mb-2">Habbit Tracker App</h2>
           <p className="text-sm text-white/80">
-         A lightweight and user-friendly Currency Converter built with HTML, CSS, and Vanilla JavaScript. It allows users to convert between global currencies using live exchange rates. The interface is clean and intuitive, offering accurate conversion results with real-time rate updates.
+         A Habbit Tracker Native App for tracking your daily habbits.
           </p>
         </div>
         <div className="mt-4 p-2">
          <a
-         href="https://rahulgope45.github.io/Currency-converter/"
+         href="https://github.com/rahulgope45/Habit-Tracker"
          target="_blank"
          rel="noopener noreferrer"
         className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-600 transition duration-200"
@@ -121,9 +136,9 @@ function Projects() {
          </a>
        </div>
        <div className="flex gap-4 text-xl mt-4 text-white p-2">
-          <SiReact className="text-[#61DBFB]" />
-          <SiCss3 className="text-[#1572B6]" />
-          <SiJavascript className="text-[#F7DF1E]" />
+          <SiDart className="text-[#0175C2]" />
+          <SiFlutter className="text-[#02569B]" />
+          
         </div>
         </motion.div>
 
@@ -139,9 +154,9 @@ function Projects() {
          <img src={personal} alt='portfolio website'  className="w-full h-40 object-cover rounded-lg shadow-sm"/>
          </div>
          <div className="p-4 text-white">
-          <h2 className="text-xl font-semibold mb-2">Portfolio website' App</h2>
+          <h2 className="text-xl font-semibold mb-2">Portfolio website</h2>
           <p className="text-sm text-white/80">
-         A modern and responsive portfolio website built using React, Tailwind CSS, and JavaScript. It showcases my skills, projects, resume, and contact details in a clean and interactive layout. The site features smooth scroll navigation, animated components, and a dynamic design, making it an engaging way to highlight my developer profile.
+         A modern and responsive portfolio websitemade with React and Tailwind.
           </p>
         </div>
         <div className="mt-4 p-2">
@@ -159,6 +174,42 @@ function Projects() {
           <SiReact className="text-[#61DBFB]" />
           <SiTailwindcss  className="text-[#1572B6]" />
           <SiJavascript className="text-[#F7DF1E]" />
+        </div>
+        </motion.div>
+        {/* 4th project */}
+         <motion.div  className="w-full sm:w-[calc(30%-1rem)] max-w-sm border border-white/20 rounded-2xl shadow-lg bg-white/10 backdrop-blur-md overflow-hidden transition-transform hover:scale-105 duration-300"
+         whileHover={{  boxShadow: "0 0 15px rgba(0, 123, 255, 0.6)" }}
+         transition={{ type: "spring", stiffness: 300 }}
+         >
+         <div  className="bg-white/10 p-6">
+         <img src={Groccery} alt='Currency Converter'  className="w-full h-40 object-cover rounded-lg shadow-sm"/>
+         </div>
+         <div className="p-4 text-white">
+          <h2 className="text-xl font-semibold mb-2">Shope Mart</h2>
+          <p className="text-sm text-white/80">
+         A Fullstack Shopping E-commrece Groccery web app with User and Admin Pannel.
+          </p>
+        </div>
+        <div className="mt-4 p-2">
+         <a
+         href="https://github.com/rahulgope45/Grocery-App-SmartB"
+         target="_blank"
+         rel="noopener noreferrer"
+        className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-600 transition duration-200"
+        >
+        <i className="bi bi-arrow-up-right"></i>
+        Visit
+         </a>
+       </div>
+       <div className="flex gap-4 text-xl mt-4 text-white p-2">
+          <SiReact className="text-[#61DBFB]" />
+          <SiTailwindcss className="text-[#38BDF8]"/>
+          <SiNodedotjs  className="text-[#339933]" />
+          <SiMongodb className="text-[#47A248]"/>
+          <SiExpress className="text-[#F7DF1E]"/>
+          <SiCloudinary  className="text-[#3448C5]" />
+          
+          
         </div>
         </motion.div>
       </div>
