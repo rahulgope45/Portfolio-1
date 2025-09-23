@@ -1,7 +1,16 @@
-import React from 'react'
-import { motion } from "framer-motion";
-import { SiReact, SiCss3, SiJavascript ,SiTailwindcss, SiExpress, SiMongodb, SiNodedotjs, SiCloudinary, SiSocketdotio, SiDart, SiFlutter  } from "react-icons/si";
+import React, { useState } from 'react'
+import todo from '/Bgimg/todo.png'
+import weather from '/Bgimg/weather.png'
+import currency from '/Bgimg/currency.png'
 import personal from '/Bgimg/personal2.png'
+import chat from '/Bgimg/chatappp.png'
+import Proboat from '/Bgimg/banner1.png'
+import habbit from '/Bgimg/habbit2.png'
+import Groccery from '/Bgimg/Grocery.png'
+import { motion } from "framer-motion";
+import ScrollFloat from './ScrollFloat'
+
+import { SiReact, SiCss3, SiJavascript ,SiTailwindcss, SiExpress, SiMongodb, SiNodedotjs, SiCloudinary, SiSocketdotio, SiDart, SiFlutter  } from "react-icons/si";
 
 
 

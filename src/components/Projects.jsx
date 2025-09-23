@@ -18,12 +18,7 @@ import Fullstack from './Fullstackproject'
 function Projects() {
 
 
-const frontendProjects =() =>{
-  <Frontendproject/>
-}
-const backendProject = () =>{
-  <Fullstackproject/>
-}
+
 
 
 const [active, setActive] = useState("fullstack")
@@ -191,7 +186,7 @@ const [active, setActive] = useState("fullstack")
           <SiJavascript className="text-[#F7DF1E]" />
         </div>
         </motion.div>
-        {/* 4th project */}
+        {/* 5th project */}
          <motion.div  className="w-full sm:w-[calc(30%-1rem)] max-w-sm border border-white/20 rounded-2xl shadow-lg bg-white/10 backdrop-blur-md overflow-hidden transition-transform hover:scale-105 duration-300"
          whileHover={{  boxShadow: "0 0 15px rgba(0, 123, 255, 0.6)" }}
          transition={{ type: "spring", stiffness: 300 }}
@@ -231,7 +226,7 @@ const [active, setActive] = useState("fullstack")
         </motion.div>
 
       </div>
-      <div className='mt-10 '>
+      <div className='mt-10 w-full flex flex-col'>
           <div className=' flex gap-2'>
             <button className='hover:text-white cursor-pointer'
             onClick={() => setActive('fullstack')}
@@ -245,12 +240,13 @@ const [active, setActive] = useState("fullstack")
               Frontend
 
             </button>
-            <div>
+            
+          </div>
+          <div>
              { active === 'fullstack' && <Fullstack />}
              { active === 'frontend' && <Frontend />}
 
             </div>
-          </div>
 
             
         </div>
