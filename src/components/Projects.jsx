@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import todo from '/Bgimg/todo.png'
 import weather from '/Bgimg/weather.png'
 import currency from '/Bgimg/currency.png'
@@ -11,9 +11,24 @@ import { motion } from "framer-motion";
 import ScrollFloat from './ScrollFloat'
 
 import { SiReact, SiCss3, SiJavascript ,SiTailwindcss, SiExpress, SiMongodb, SiNodedotjs, SiCloudinary, SiSocketdotio, SiDart, SiFlutter  } from "react-icons/si";
+import Frontend from './Frontendproject'
+import Fullstack from './Fullstackproject'
 
 
 function Projects() {
+
+
+const frontendProjects =() =>{
+  <Frontendproject/>
+}
+const backendProject = () =>{
+  <Fullstackproject/>
+}
+
+
+const [active, setActive] = useState("fullstack")
+
+
   return (
     
     <motion.section className="min-h-screen p-5"
@@ -211,8 +226,34 @@ function Projects() {
           
           
         </div>
+        {/* Adding sliderBrowser here */}
+        
         </motion.div>
+
       </div>
+      <div className='mt-10 '>
+          <div className=' flex gap-2'>
+            <button className='hover:text-white cursor-pointer'
+            onClick={() => setActive('fullstack')}
+            >
+              Fullstack
+
+            </button>
+            <button className='hover:text-white cursor-pointer'
+            onClick={() =>setActive('frontend')}
+            >
+              Frontend
+
+            </button>
+            <div>
+             { active === 'fullstack' && <Fullstack />}
+             { active === 'frontend' && <Frontend />}
+
+            </div>
+          </div>
+
+            
+        </div>
     </motion.section>
   )
 }
