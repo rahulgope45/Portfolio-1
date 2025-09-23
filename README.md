@@ -1,12 +1,66 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Portfolio-1
 
-Currently, two official plugins are available:
+Portfolio-1 is my personal portfolio website 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Core Framework & Styling:** React, TailwindCSS
+
+**UI Icons:** 
+- bootstrap-icons – Icon set for UI elements
+- react-icons – Popular icon library for React
+
+**Animation & Effects:** 
+- Framer Motion – Declarative animations and transitions
+- GSAP – Advanced timeline-based animations
+- Split-Type – Text splitting for animation control
+- tsparticles-engine & tsparticles-basic – Particle effects
+- react-particles – React wrapper for particle systems
+
+**PDF & Document Handling:** 
+- @react-pdf/renderer – Generate PDFs from React components
+- react-pdf – Display PDFs in-browser
+- pdfjs-dist – PDF parsing and rendering
+
+**Communiction:**
+- @emailjs/browser – Send emails directly from the frontend
+
+
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://link-to-project
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+Run 
+
+```bash
+  npm run dev
+```
+
+
+
+
+
+## Acknowledgements
+
+
+ - [Tailwind CSS](https://tailwindcss.com/)
+
