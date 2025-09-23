@@ -23,8 +23,8 @@ function Frontendproject() {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
         >
-    
-      {/* 4th project */}
+          <div className=' flex item-center justify-center gap-5'>
+            {/* 1st project */}
          <motion.div  className="w-full sm:w-[calc(30%-1rem)] max-w-sm border border-white/20 rounded-2xl shadow-lg bg-white/10 backdrop-blur-md overflow-hidden transition-transform hover:scale-105 duration-300"
          whileHover={{  boxShadow: "0 0 15px rgba(0, 123, 255, 0.6)" }}
          transition={{ type: "spring", stiffness: 300 }}
@@ -55,6 +55,10 @@ function Frontendproject() {
           <SiJavascript className="text-[#F7DF1E]" />
         </div>
         </motion.div>
+
+          </div>
+    
+      
         </motion.section>
     
   )

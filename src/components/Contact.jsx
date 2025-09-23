@@ -29,7 +29,7 @@ return (
     initial={{ opacity: 0, y: 30 }}
   whileInView={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6 }}
-  viewport={{ once: false, amount: 0.5}}
+  viewport={{ once: true, amount: 0.5}}
     >
       <div className="w-full max-w-xl bg-white/10 backdrop-blur-lg rounded-2xl shadow-lg p-6">
         <h2 className="text-3xl font-semibold text-white text-center mb-6">Contact Me</h2>
