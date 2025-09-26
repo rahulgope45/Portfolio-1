@@ -77,7 +77,7 @@ function Fullstackproject() {
         </div>
         <div className="mt-4 p-2">
           <a
-            href="https://github.com/rahulgope45/Weather-App"
+            href="https://prop-bot-rental.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-lg shadow-md hover:from-blue-700 hover:to-blue-600 transition duration-200"
