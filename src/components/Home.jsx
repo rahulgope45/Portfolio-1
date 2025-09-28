@@ -98,7 +98,9 @@ function Home() {
               <div className='flex p-5 gap-4 text-xl'>
                 <div onClick={toggleLike} className="cursor-pointer"><i
                   className={`bi ${liked ? 'bi-heart-fill text-pink-500' : 'bi-heart'} transition-all duration-300`}
-                  class="bi bi-heart"></i>
+                  class="bi bi-heart"
+                  
+                  ></i>
                 </div>
                 <div className="cursor-pointer"
                   onClick={() => {
